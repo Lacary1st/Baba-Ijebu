@@ -11,12 +11,11 @@ var randomNums = [];
             if(randomNums.includes(value)){
                 games[inputGames] = value;
                 inputGames++
-            }if(games.length >= 3){
-            // games.length = document.getElementById('result').innerHTML ("You Win")
-                console.log('You Win')
+            }if(games.length >= 2){
+                console.log('Congratulations! You win')
             }
             else{
-                // games.length = document.getElementById('result').innerHTML ("Owo Jona")
-                console.log('Owo Jona')
+                console.log('Try again next time')
             }
         }
+
