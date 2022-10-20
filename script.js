@@ -12,6 +12,7 @@ function play(){
     for(let x =0; x < 6 ; x++) {
         randomNums[x] = Math.floor(Math.random() * 10)
 // console.log(randomNums)
+document.getElementById('randomnums').innerHTML = randomNums
     }
     const myGame = [];
     let inputGames =0
@@ -23,7 +24,7 @@ function play(){
             }
             document.getElementById('returnnums').innerHTML = myGame;
         }
-            if(myGame.length >= 2){
+            if(myGame.length >= 3){
                 document.getElementById('result').innerHTML   ='Congratulations! You win'
             }
             else{
