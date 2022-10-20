@@ -1,21 +1,37 @@
-var randomNums = [];
-    for(let x =0; x < 6 ; x++) {
-        randomNums[x] = Math.floor(Math.random()*100)
-    }
-        console.log(randomNums)
+// var randomNums = [];
+//     for(let x =0; x < 6 ; x++) {
+//         randomNums[x] = Math.floor(Math.random()*10)
+//     }
+        // console.log(randomNums)
+function play(){
+    input = document.getElementById('games');           
+    let newNums =Array.from(input.value);
+    usersGames = newNums;
 
-    let games = [];
+    const randomNums = [];
+    for(let x =0; x < 6 ; x++) {
+        randomNums[x] = Math.floor(Math.random() * 10)
+// console.log(randomNums)
+    }
+    const myGame = [];
     let inputGames =0
-    let usersGames = [30, 2, 99]
         for (let value of usersGames){
-            if(randomNums.includes(value)){
-                games[inputGames] = value;
+            let tonum = parseInt(value)
+            if(randomNums.includes(tonum)){
+                myGame[inputGames] = value;
                 inputGames++
-            }if(games.length >= 2){
-                console.log('Congratulations! You win')
+            }
+            document.getElementById('returnnums').innerHTML = myGame;
+        }
+            if(myGame.length >= 2){
+                document.getElementById('result').innerHTML   ='Congratulations! You win'
             }
             else{
-                console.log('Try again next time')
+                document.getElementById('result').innerHTML  ='Try again next time'
             }
-        }
+            //  document.getElementById('result').innerHTML = result 
+            // let outcome = document.getElementById('returnnums')
 
+        
+    
+        }

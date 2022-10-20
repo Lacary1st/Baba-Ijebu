@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baba Ijebu</title>
-</head>
-<body>
     <style>
         section{
             border-top-right-radius: 10px;
@@ -16,7 +14,7 @@
             padding: 10px;
             background-color: red;
             width: 500px;
-            margin: auto;
+            margin: 100px  auto;
             display: flex;
             justify-content: space-between;
         }
@@ -29,7 +27,7 @@
         }
         
         form{
-            margin-top: 10px;
+            margin-top: 20px;
             width: 100%;
         }
         form input{
@@ -51,6 +49,9 @@
         }
         
     </style>
+</head>
+<body>
+    
 
     <section>
         <div class="logo">
@@ -58,24 +59,16 @@
             <p><i>...your sure way to win big.</i></p>
         </div>
         <form action="">
-            <input type="text" id="randomnums" onclick="random()" placeholder="Random Numbers"><br>
-            <input type="text" id="games" onclick="games()" placeholder="Input your game"><br>
-            <input type="text"placeholder="Return Numbers" onclick="returnnums()" id="returnnums"><br>
+            <input type="text" id="randomnums" placeholder="Random Numbers"><br>
+            <input type="text" id="games" placeholder="Input your game"><br>
+            <input type="text"placeholder="Return Numbers" id="returnnums"><br>
             <button type="submit"  onclick="play()">PLAY</button><br>
-            <input type="text" id="result" placeholder="Result" onclick="result()">
+            <p id="result">Result:</p>
         </form>
     </section>
 
     <script src="script.js">
-        
 
-
-
-        
-        
-    
-        
-        
     </script>
 </body>
 </html>
