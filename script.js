@@ -1,8 +1,4 @@
-// var randomNums = [];
-//     for(let x =0; x < 6 ; x++) {
-//         randomNums[x] = Math.floor(Math.random()*10)
-//     }
-        // console.log(randomNums)
+
 function play(){
     input = document.getElementById('games');           
     let newNums =Array.from(input.value);
@@ -10,8 +6,8 @@ function play(){
 
     const randomNums = [];
     for(let x =0; x < 6 ; x++) {
-        randomNums[x] = Math.floor(Math.random() * 10)
-// console.log(randomNums)
+        randomNums[x] = Math.floor(Math.random() * 100)
+ 
 document.getElementById('randomnums').innerHTML = randomNums
     }
     const myGame = [];
@@ -30,9 +26,4 @@ document.getElementById('randomnums').innerHTML = randomNums
             else{
                 document.getElementById('result').innerHTML  ='Try again next time'
             }
-            //  document.getElementById('result').innerHTML = result 
-            // let outcome = document.getElementById('returnnums')
-
-        
-    
         }
